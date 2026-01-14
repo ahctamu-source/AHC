@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AHC — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">AHC</span>
+        <span class="brand-text">
+          <span class="brand-title">Aggie Health Collaborative</span>
+          <span class="brand-subtitle">Healthcare • Environmental Health • Technology</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="ahc.html">AHC Overview</a>
+        <a href="compostify.html">Compostify</a>
+        <a href="hpo.html">HPO Initiative</a>
+        <a href="aiml.html">AI / ML</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>Student-led impact across health, environment, and technology</h1>
+      <p class="lead">
+        Explore the Aggie Health Collaborative and its initiatives. Use the navigation tabs to open
+        each section as a separate page.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card cols-6">
+        <h2>AHC Overview</h2>
+        <p>Mission, goals, sectors, core programs, leadership structure, KPIs, and draft timeline.</p>
+        <p class="small"><a href="ahc.html">Open AHC Overview →</a></p>
+      </article>
+
+      <article class="card cols-6">
+        <h2>Compostify</h2>
+        <p>Campus composting chapter vision: collection, education, partnerships, and measurable diversion impact.</p>
+        <p class="small"><a href="compostify.html">Open Compostify →</a></p>
+      </article>
+
+      <article class="card cols-6">
+        <h2>HPO Initiative</h2>
+        <p>Vital Discoveries Research &amp; Advocacy: student writing platform, workshops, mentorship, and events.</p>
+        <p class="small"><a href="hpo.html">Open HPO Initiative →</a></p>
+      </article>
+
+      <article class="card cols-6">
+        <h2>AI / ML Chapter</h2>
+        <p>Responsible AI/ML skills, cross-sector projects, hackathons, ethics forums, and outreach tools.</p>
+        <p class="small"><a href="aiml.html">Open AI / ML →</a></p>
+      </article>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Aggie Health Collaborative</div>
+    </div>
+  </main>
+
+  <script src="nav.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
